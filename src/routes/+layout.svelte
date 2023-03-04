@@ -3,18 +3,13 @@
 	import './styles.css';
 </script>
 
-<div class="h-screen w-screen bg-zinc-900 text-zone-100">
+<div class="h-screen w-screen bg-white dark:bg-zinc-900">
 	<Header />
 
-	<main>
+	<main class="h-full container mx-auto px-8">
 		<slot />
 	</main>
-
-	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
-	</footer>
 </div>
 
 <style>
-
 </style>
