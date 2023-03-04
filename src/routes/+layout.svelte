@@ -3,12 +3,14 @@
 	import './styles.css';
 </script>
 
-<div class="h-screen w-screen bg-white dark:bg-zinc-900">
-	<Header />
+<div class="h-screen w-screen bg-white dark:bg-zinc-900 font-poppins">
+	<div class="h-full w-full container mx-auto px-8">
+		<Header />
 
-	<main class="h-full container mx-auto px-8">
-		<slot />
-	</main>
+		<main class="h-full">
+			<slot />
+		</main>
+	</div>
 </div>
 
 <style>
