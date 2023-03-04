@@ -1,10 +1,20 @@
 <script>
-	import Header from './Header.svelte';
+	const title = "Max Kelly - Software Engineer";
+	const description = "Portfolio website for Software Engineer Max Kelly. A showcase of my experience and skills.";
 </script>
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Max Kelly" />
+	<title>Max Kelly - Software Engineer</title>
+	<meta
+		name="description"
+		content={description}
+	/>
+	<!-- Open Graph Tags -->
+	<meta property="og:title" content={title} />
+	<meta property="og:description" content={description} />
+	<!-- Twitter -->
+	<meta property="twitter:title" content={title} />
+	<meta property="twitter:description" content={description} />
 </svelte:head>
 
 <div class="p-24">
