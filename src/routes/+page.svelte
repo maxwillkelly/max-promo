@@ -1,4 +1,6 @@
 <script>
+	import profileImage from '$lib/images/profile.jpg';
+
 	const title = 'Max Kelly - Software Engineer';
 	const description =
 		'Portfolio website for Software Engineer Max Kelly. A showcase of my experience and skills.';
@@ -15,21 +17,24 @@
 	<meta property="twitter:description" content={description} />
 </svelte:head>
 
-<div class="p-24">
-	<div class="w-1/2">
+<div class="grid grid-cols-2 p-32">
+	<div>
 		<h1 class="text-5xl leading-normal font-semibold text-zinc-900 dark:text-white">
 			Hello, I am <br />Max Kelly
 		</h1>
-		<h2 class="text-2xl font-semibold text-zinc-600 dark:text-zinc-300 mt-2">
+		<h2 class="text-xl font-semibold text-zinc-600 dark:text-zinc-300 mt-2">
 			Software Engineer
 		</h2>
-		<p class="text-lg font-medium text-zinc-600 dark:text-zinc-300 mt-4">
-			A passionate developer that thinks about the small details
+		<p class="font-medium text-zinc-600 dark:text-zinc-300 mt-4">
+			A passionate developer that thinks about the small details.
 		</p>
 		<button
 			class="py-4 px-4 mt-8 bg-rose-600 text-white font-semibold rounded-lg shadow-md hover:bg-rose-800 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:ring-opacity-75"
 		>
 			Contact me
 		</button>
+	</div>
+	<div>
+		<img class="h-80 w-80 ml-12 rounded-full" alt="Profile" src={profileImage} />
 	</div>
 </div>
