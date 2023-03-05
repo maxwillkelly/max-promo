@@ -1,5 +1,6 @@
 <script>
 	import profileImage from '$lib/images/profile.jpg';
+	import IoMdSend from 'svelte-icons/io/IoMdSend.svelte';
 
 	const title = 'Max Kelly - Software Engineer';
 	const description =
@@ -22,16 +23,16 @@
 		<h1 class="text-5xl leading-normal font-semibold text-zinc-900 dark:text-white">
 			Hello, I am <br />Max Kelly
 		</h1>
-		<h2 class="text-xl font-semibold text-zinc-600 dark:text-zinc-300 mt-2">
-			Software Engineer
-		</h2>
+		<h2 class="text-xl font-semibold text-zinc-600 dark:text-zinc-300 mt-2">Software Engineer</h2>
 		<p class="font-medium text-zinc-600 dark:text-zinc-300 mt-4">
 			A passionate developer that thinks about the small details.
 		</p>
 		<button
 			class="py-4 px-4 mt-8 bg-rose-600 text-white font-semibold rounded-lg shadow-md hover:bg-rose-800 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:ring-opacity-75"
 		>
-			Contact me
+			<div class="flex">
+				Message me <div class="h-6 w-6 ml-2"><IoMdSend /></div>
+			</div>
 		</button>
 	</div>
 	<div>
