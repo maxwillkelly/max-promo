@@ -1,5 +1,6 @@
 <script>
 	import profileImage from '$lib/images/profile.jpg';
+	// @ts-ignore
 	import IoMdSend from 'svelte-icons/io/IoMdSend.svelte';
 
 	const title = 'Max Kelly - Software Engineer';
