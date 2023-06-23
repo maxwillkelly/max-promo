@@ -1,5 +1,9 @@
 <script>
-	import HeaderLink from "./HeaderLink.svelte";
+	import HeaderLink from './HeaderLink.svelte';
+
+	let isMenuOpen = false;
+
+	const toggleMenu = () => (isMenuOpen = !isMenuOpen);
 </script>
 
 <header>
@@ -12,7 +16,8 @@
 						type="button"
 						class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
 						aria-controls="mobile-menu"
-						aria-expanded="false"
+						aria-expanded={isMenuOpen ? 'true' : 'false'}
+						on:click={toggleMenu}
 					>
 						<span class="sr-only">Open main menu</span>
 						<!--
@@ -66,40 +71,23 @@
 					</div>
 					<div class="hidden sm:ml-6 sm:block">
 						<div class="flex space-x-4">
-							<!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
 							<HeaderLink href="/">Home</HeaderLink>
 							<HeaderLink href="/about">About</HeaderLink>
 							<HeaderLink href="/experience">Experience</HeaderLink>
-
-							<!-- <a
-								href="/"
-								class="bg-rose-600 text-white rounded-md px-3 py-2 text-sm font-medium"
-								aria-current="page">Home</a
-							>
-							<a
-								href="/about"
-								class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
-								>About</a
-							>
-							<a
-								href="/experience"
-								class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
-								>Experience</a
-							> -->
 						</div>
 					</div>
 				</div>
 			</div>
+			<!-- Mobile menu, show/hide based on menu state. -->
+			{#if isMenuOpen}
+				<div class="sm:hidden" id="mobile-menu">
+					<div class="space-y-1 px-2 pb-3 pt-2">
+						<HeaderLink href="/">Home</HeaderLink>
+						<HeaderLink href="/about">About</HeaderLink>
+						<HeaderLink href="/experience">Experience</HeaderLink>
+					</div>
+				</div>
+			{/if}
 		</div>
-		<!-- <span class="font-semibold text-xl text-zinc-500 dark:text-zinc-200">Max Kelly</span> -->
-		<!-- <div class="w-full">
-			<ul class="flex flex-col">
-				<li>
-					<a href="/" class="block">Home</a>
-					<a href="/" class="block">About</a>
-					<a href="/" class="block">Experience</a>
-				</li>
-			</ul>
-		</div> -->
 	</nav>
 </header>
