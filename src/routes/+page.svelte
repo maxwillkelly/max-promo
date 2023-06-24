@@ -1,7 +1,7 @@
-<script>
+<script lang="ts">
+	import Icon from '@iconify/svelte';
 	import profileImage from '$lib/images/profile.jpg';
-	// @ts-ignore
-	import IoMdSend from 'svelte-icons/io/IoMdSend.svelte';
+	import Button from '../components/common/Button.svelte';
 
 	const title = 'Max Kelly - Software Engineer';
 	const description =
@@ -28,13 +28,9 @@
 		<p class="font-medium text-zinc-600 dark:text-zinc-300 mt-4">
 			A passionate developer that thinks about the small details.
 		</p>
-		<button
-			class="py-4 px-4 mt-8 bg-rose-600 text-white font-semibold rounded-lg shadow-md hover:bg-rose-800 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:ring-opacity-75"
-		>
-			<div class="flex">
-				Message me <div class="h-6 w-6 ml-2"><IoMdSend /></div>
-			</div>
-		</button>
+		<Button title="Message me">
+			<Icon icon="ion:send" height={24} width={24} />
+		</Button>
 	</div>
 	<div>
 		<img class="h-80 w-80 ml-12 rounded-full" alt="Profile" src={profileImage} />
