@@ -57,18 +57,11 @@
 					</button>
 				</div>
 				<div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-					<div class="flex flex-shrink-0 items-center">
-						<img
-							class="block h-8 w-auto lg:hidden"
-							src="https://tailwindui.com/img/logos/mark.svg?color=rose&shade=600"
-							alt="Max Kelly"
-						/>
-						<img
-							class="hidden h-8 w-auto lg:block"
-							src="https://tailwindui.com/img/logos/mark.svg?color=rose&shade=600"
-							alt="Max Kelly"
-						/>
-					</div>
+					<img
+						class="block h-8 w-auto"
+						src="https://tailwindui.com/img/logos/mark.svg?color=rose&shade=600"
+						alt="Max Kelly"
+					/>
 					<div class="hidden sm:ml-6 sm:block">
 						<div class="flex space-x-4">
 							<HeaderLink href="/">Home</HeaderLink>
@@ -81,7 +74,7 @@
 			<!-- Mobile menu, show/hide based on menu state. -->
 			{#if isMenuOpen}
 				<div class="sm:hidden" id="mobile-menu">
-					<div class="space-y-1 px-2 pb-3 pt-2">
+					<div class="flex flex-col space-y-1 px-2 pb-6 pt-2">
 						<HeaderLink href="/">Home</HeaderLink>
 						<HeaderLink href="/about">About</HeaderLink>
 						<HeaderLink href="/experience">Experience</HeaderLink>

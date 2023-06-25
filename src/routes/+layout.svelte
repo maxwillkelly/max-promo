@@ -1,17 +1,14 @@
 <script>
 	import Header from '../components/Header/Header.svelte';
+	import '@fontsource/poppins';
 	import './styles.css';
 </script>
 
-<div class="h-screen w-screen bg-white dark:bg-zinc-900 font-poppins">
-	<div class="h-full w-full container mx-auto px-32">
+<div class="min-h-screen min-w-screen font-poppins bg-white dark:bg-zinc-900">
+	<div class="container mx-auto px-4 xl:px-32">
 		<Header />
-
-		<main class="h-full">
+		<main>
 			<slot />
 		</main>
 	</div>
 </div>
-
-<style>
-</style>
