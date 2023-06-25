@@ -4,10 +4,10 @@
 	import './styles.css';
 </script>
 
-<div class="min-h-screen min-w-screen font-poppins bg-white dark:bg-zinc-900">
+<div class="min-h-screen min-w-screen font-poppins bg-zinc-50 dark:bg-zinc-900">
+	<Header />
 	<div class="container mx-auto px-4 xl:px-32">
-		<Header />
-		<main>
+		<main class="h-full">
 			<slot />
 		</main>
 	</div>

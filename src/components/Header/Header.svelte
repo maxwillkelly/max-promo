@@ -1,5 +1,6 @@
 <script>
 	import HeaderLink from './HeaderLink.svelte';
+	import DarkModeToggle from './DarkModeToggle.svelte';
 
 	let isMenuOpen = false;
 
@@ -7,7 +8,7 @@
 </script>
 
 <header>
-	<nav>
+	<nav class="shadow dark:shadow-none">
 		<div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
 			<div class="relative flex h-16 items-center justify-between">
 				<div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -56,21 +57,20 @@
 						</svg>
 					</button>
 				</div>
-				<div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-					<a href="/"
-						><img
-							class="block h-8 w-auto"
-							src="https://tailwindui.com/img/logos/mark.svg?color=rose&shade=600"
-							alt="Max Kelly"
-						/></a
-					>
-					<div class="hidden sm:ml-6 sm:block">
-						<div class="flex space-x-4">
-							<HeaderLink href="/">Home</HeaderLink>
-							<HeaderLink href="/about">About</HeaderLink>
-							<HeaderLink href="/experience">Experience</HeaderLink>
-						</div>
+				<a href="/"
+					><img
+						class="block h-8 w-auto"
+						src="https://tailwindui.com/img/logos/mark.svg?color=rose&shade=600"
+						alt="Max Kelly"
+					/></a
+				>
+				<div class="hidden sm:flex sm:flex-1 sm:items-center sm:justify-between sm:ml-6">
+					<div>
+						<HeaderLink href="/">Home</HeaderLink>
+						<HeaderLink href="/about">About</HeaderLink>
+						<HeaderLink href="/experience">Experience</HeaderLink>
 					</div>
+					<DarkModeToggle />
 				</div>
 			</div>
 			<!-- Mobile menu, show/hide based on menu state. -->
@@ -80,6 +80,7 @@
 						<HeaderLink href="/">Home</HeaderLink>
 						<HeaderLink href="/about">About</HeaderLink>
 						<HeaderLink href="/experience">Experience</HeaderLink>
+						<DarkModeToggle />
 					</div>
 				</div>
 			{/if}
