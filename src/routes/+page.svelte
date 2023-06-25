@@ -82,4 +82,56 @@
 			</Button>
 		</div>
 	</div>
+	<div class="my-72">
+		<h1
+			class="text-2xl sm:text-3xl lg:text-4xl text-center leading-normal font-semibold text-zinc-900 dark:text-zinc-100"
+		>
+			Experience
+		</h1>
+		<p
+			class="text-md sm:text-lg text-center leading-normal font-medium text-zinc-600 dark:text-zinc-300 mt-2"
+		>
+			Here are some of the companies I have worked for.
+		</p>
+		<ol class="relative border-l border-rose-600 dark:border-rose-300 mt-16">
+			<li>
+				<div
+					class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 rounded-full mt-1.5 border border-white dark:border-rose-900 bg-rose-600 dark:bg-rose-600"
+				/>
+			</li>
+			<li />
+		</ol>
+	</div>
+	<div class="my-72">
+		<div class="grid gap-3 sm:gap-9 place-items-center md:grid-cols-2">
+			<h1
+				class="text-2xl sm:text-3xl lg:text-4xl text-center leading-normal font-semibold text-zinc-900 dark:text-zinc-100"
+			>
+				Contact me
+			</h1>
+			<div class="grid gap-3 sm:gap-9">
+				<div>
+					<label for="name" class="text-zinc-600 dark:text-zinc-300">Name</label>
+					<input id="name" type="text" placeholder="Name" class="w-full rounded-md p-2" />
+				</div>
+				<div>
+					<label for="email" class="text-zinc-600 dark:text-zinc-300">Email</label>
+					<input id="email" type="text" placeholder="Name" class="w-full rounded-md p-2" />
+				</div>
+				<div>
+					<label for="subtitle" class="text-zinc-600 dark:text-zinc-300">Subtitle</label>
+					<input id="subtitle" type="text" placeholder="Name" class="w-full rounded-md p-2" />
+				</div>
+				<div>
+					<label for="message" class="text-zinc-600 dark:text-zinc-300">Message</label>
+					<textarea id="message" rows="6" placeholder="Message" class="w-full rounded-md p-2" />
+				</div>
+				<div>
+					<Button title="Send message">
+						<Icon icon="ion:send" height={24} width={24} />
+					</Button>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
