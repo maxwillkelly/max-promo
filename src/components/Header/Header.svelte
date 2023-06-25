@@ -57,11 +57,13 @@
 					</button>
 				</div>
 				<div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-					<img
-						class="block h-8 w-auto"
-						src="https://tailwindui.com/img/logos/mark.svg?color=rose&shade=600"
-						alt="Max Kelly"
-					/>
+					<a href="/"
+						><img
+							class="block h-8 w-auto"
+							src="https://tailwindui.com/img/logos/mark.svg?color=rose&shade=600"
+							alt="Max Kelly"
+						/></a
+					>
 					<div class="hidden sm:ml-6 sm:block">
 						<div class="flex space-x-4">
 							<HeaderLink href="/">Home</HeaderLink>
