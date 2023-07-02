@@ -91,14 +91,16 @@
 		<p
 			class="text-md sm:text-lg text-center leading-normal font-medium text-zinc-600 dark:text-zinc-300 mt-2"
 		>
-			Here are some of the companies I have worked for.
+			Here are some of the companies I have worked for
 		</p>
 		<ol class="relative border-l-4 border-rose-600 dark:border-rose-600 mt-16">
 			<li class="mb-10 ml-4">
 				<div
 					class="absolute w-6 h-6 rounded-full -left-3.5 border dark:border-rose-900 bg-rose-600 dark:bg-rose-600"
 				/>
-				<time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">September 2018 - June 2022</time>
+				<time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+					>September 2018 - June 2022</time
+				>
 				<p
 					class="text-md sm:text-lg leading-normal font-medium text-zinc-600 dark:text-zinc-300 mt-2"
 				>
@@ -126,7 +128,9 @@
 				<div
 					class="absolute w-6 h-6 rounded-full -left-3.5 border dark:border-rose-900 bg-rose-600 dark:bg-rose-600"
 				/>
-				<time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">September 2020 - September 2021</time>
+				<time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+					>September 2020 - September 2021</time
+				>
 
 				<p
 					class="text-md sm:text-lg leading-normal font-medium text-zinc-600 dark:text-zinc-300 mt-2"
@@ -150,7 +154,9 @@
 				<div
 					class="absolute w-6 h-6 rounded-full -left-3.5 border dark:border-rose-900 bg-rose-600 dark:bg-rose-600"
 				/>
-				<time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">June 2022 - Present</time>
+				<time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+					>June 2022 - Present</time
+				>
 				<p
 					class="text-md sm:text-lg leading-normal font-medium text-zinc-600 dark:text-zinc-300 mt-2"
 				>
@@ -172,35 +178,101 @@
 		</ol>
 	</div>
 	<div class="my-72">
-		<div class="grid gap-3 sm:gap-9 place-items-center md:grid-cols-2">
-			<h1
-				class="text-2xl sm:text-3xl lg:text-4xl text-center leading-normal font-semibold text-zinc-900 dark:text-zinc-100"
-			>
-				Contact me
-			</h1>
+		<h1
+			class="text-2xl sm:text-3xl lg:text-4xl text-center leading-normal font-semibold text-zinc-900 dark:text-zinc-100"
+		>
+			Tech stack
+		</h1>
+		<p
+			class="text-md sm:text-lg text-center leading-normal font-medium text-zinc-600 dark:text-zinc-300 mt-2"
+		>
+			Here's what I know
+		</p>
+	</div>
+	<div class="my-72">
+		<h1
+			class="text-2xl sm:text-3xl lg:text-4xl text-center leading-normal font-semibold text-zinc-900 dark:text-zinc-100"
+		>
+			Education
+		</h1>
+		<p
+			class="text-md sm:text-lg text-center leading-normal font-medium text-zinc-600 dark:text-zinc-300 mt-2"
+		>
+			Here's where I went to school
+		</p>
+	</div>
+	<div class="my-72">
+		<h1
+			class="text-2xl sm:text-3xl lg:text-4xl text-center leading-normal font-semibold text-zinc-900 dark:text-zinc-100"
+		>
+			Contact me
+		</h1>
+		<form action="#" method="POST" class="mx-auto mt-16 sm:mt-20">
 			<div class="grid gap-3 sm:gap-9">
 				<div>
-					<label for="name" class="text-zinc-600 dark:text-zinc-300">Name</label>
-					<input id="name" type="text" placeholder="Name" class="w-full rounded-md p-2" />
+					<label
+						for="name"
+						class="block text-sm font-semibold leading-6 text-zinc-600 dark:text-zinc-300"
+						>Name</label
+					>
+					<div class="mt-2.5">
+						<input
+							id="name"
+							type="text"
+							autocomplete="name"
+							class="block w-full rounded-md border-0 px-3.5 py-2 text-zinc-900 shadow-sm ring-1 ring-inset ring-rose-600 placeholder:text-zinc-600 focus:ring-2 focus:ring-inset focus:ring-rose-600 sm:text-sm sm:leading-6"
+						/>
+					</div>
 				</div>
 				<div>
-					<label for="email" class="text-zinc-600 dark:text-zinc-300">Email</label>
-					<input id="email" type="text" placeholder="Name" class="w-full rounded-md p-2" />
+					<label
+						for="email"
+						class="block text-sm font-semibold leading-6 text-zinc-600 dark:text-zinc-300"
+						>Email</label
+					>
+					<div class="mt-2.5">
+						<input
+							id="email"
+							type="text"
+							autocomplete="email"
+							class="block w-full rounded-md border-0 px-3.5 py-2 text-zinc-900shadow-sm ring-1 ring-inset ring-rose-600 placeholder:text-zinc-600 focus:ring-2 focus:ring-inset focus:ring-rose-600 sm:text-sm sm:leading-6"
+						/>
+					</div>
 				</div>
 				<div>
-					<label for="subtitle" class="text-zinc-600 dark:text-zinc-300">Subtitle</label>
-					<input id="subtitle" type="text" placeholder="Name" class="w-full rounded-md p-2" />
+					<label
+						for="subtitle"
+						class="block text-sm font-semibold leading-6 text-zinc-600 dark:text-zinc-300"
+						>Subtitle</label
+					>
+					<div class="mt-2.5">
+						<input
+							id="subtitle"
+							type="text"
+							class="block w-full rounded-md border-0 px-3.5 py-2 text-zinc-900 shadow-sm ring-1 ring-inset ring-rose-600 placeholder:text-zinc-600 focus:ring-2 focus:ring-inset focus:ring-rose-600 sm:text-sm sm:leading-6"
+						/>
+					</div>
 				</div>
 				<div>
-					<label for="message" class="text-zinc-600 dark:text-zinc-300">Message</label>
-					<textarea id="message" rows="6" placeholder="Message" class="w-full rounded-md p-2" />
+					<label
+						for="message"
+						class="block text-sm font-semibold leading-6 text-zinc-600 dark:text-zinc-300"
+						>Message</label
+					>
+					<div class="mt-2.5">
+						<textarea
+							id="message"
+							rows="6"
+							class="block w-full rounded-md border-0 px-3.5 py-2 text-zinc-900 shadow-sm ring-1 ring-inset ring-rose-600 placeholder:text-zinc-600 focus:ring-2 focus:ring-inset focus:ring-rose-600 sm:text-sm sm:leading-6"
+						/>
+					</div>
 				</div>
-				<div>
+				<div class="flex flex-1 justify-center">
 					<Button title="Send message">
 						<Icon icon="ion:send" height={24} width={24} />
 					</Button>
 				</div>
 			</div>
-		</div>
+		</form>
 	</div>
 </div>
