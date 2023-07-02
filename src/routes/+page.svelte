@@ -93,13 +93,82 @@
 		>
 			Here are some of the companies I have worked for.
 		</p>
-		<ol class="relative border-l border-rose-600 dark:border-rose-300 mt-16">
-			<li>
+		<ol class="relative border-l-4 border-rose-600 dark:border-rose-600 mt-16">
+			<li class="mb-10 ml-4">
 				<div
-					class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 rounded-full mt-1.5 border border-white dark:border-rose-900 bg-rose-600 dark:bg-rose-600"
+					class="absolute w-6 h-6 rounded-full -left-3.5 border dark:border-rose-900 bg-rose-600 dark:bg-rose-600"
 				/>
+				<time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">September 2018 - June 2022</time>
+				<p
+					class="text-md sm:text-lg leading-normal font-medium text-zinc-600 dark:text-zinc-300 mt-2"
+				>
+					University of Dundee
+				</p>
+				<p
+					class="text-sm sm:text-md leading-normal font-medium text-zinc-600 dark:text-zinc-300 mt-2"
+				>
+					BSC (Hons) Computing Science
+				</p>
+				<p
+					class="text-sm sm:text-md leading-normal font-medium text-zinc-600 dark:text-zinc-300 mt-2"
+				>
+					First class honours
+				</p>
+				<p
+					class="text-sm sm:text-md leading-normal font-medium text-zinc-600 dark:text-zinc-300 mt-2"
+				>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolor corrupti placeat ipsam
+					nobis nemo magni enim veritatis, delectus quam? Dolorem amet obcaecati nulla porro labore.
+					Rem eos quae provident?
+				</p>
 			</li>
-			<li />
+			<li class="mb-10 ml-4">
+				<div
+					class="absolute w-6 h-6 rounded-full -left-3.5 border dark:border-rose-900 bg-rose-600 dark:bg-rose-600"
+				/>
+				<time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">September 2020 - September 2021</time>
+
+				<p
+					class="text-md sm:text-lg leading-normal font-medium text-zinc-600 dark:text-zinc-300 mt-2"
+				>
+					Udrafter
+				</p>
+				<p
+					class="text-sm sm:text-md leading-normal font-medium text-zinc-600 dark:text-zinc-300 mt-2"
+				>
+					Student Software Developer
+				</p>
+				<p
+					class="text-sm sm:text-md leading-normal font-medium text-zinc-600 dark:text-zinc-300 mt-2"
+				>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolor corrupti placeat ipsam
+					nobis nemo magni enim veritatis, delectus quam? Dolorem amet obcaecati nulla porro labore.
+					Rem eos quae provident?
+				</p>
+			</li>
+			<li class="ml-4">
+				<div
+					class="absolute w-6 h-6 rounded-full -left-3.5 border dark:border-rose-900 bg-rose-600 dark:bg-rose-600"
+				/>
+				<time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">June 2022 - Present</time>
+				<p
+					class="text-md sm:text-lg leading-normal font-medium text-zinc-600 dark:text-zinc-300 mt-2"
+				>
+					The Key Support Services
+				</p>
+				<p
+					class="text-sm sm:text-md leading-normal font-medium text-zinc-600 dark:text-zinc-300 mt-2"
+				>
+					Software Engineer
+				</p>
+				<p
+					class="text-sm sm:text-md leading-normal font-medium text-zinc-600 dark:text-zinc-300 mt-2"
+				>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolor corrupti placeat ipsam
+					nobis nemo magni enim veritatis, delectus quam? Dolorem amet obcaecati nulla porro labore.
+					Rem eos quae provident?
+				</p>
+			</li>
 		</ol>
 	</div>
 	<div class="my-72">
