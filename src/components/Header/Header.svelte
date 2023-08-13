@@ -1,10 +1,30 @@
-<script>
+<script lang="ts">
 	import HeaderLink from './HeaderLink.svelte';
 	import DarkModeToggle from './DarkModeToggle.svelte';
 
 	let isMenuOpen = false;
 
 	const toggleMenu = () => (isMenuOpen = !isMenuOpen);
+
+	type Link = {
+		name: string;
+		href: string;
+	};
+
+	const links: Link[] = [
+		{
+			name: 'Home',
+			href: '/'
+		},
+		{
+			name: 'About',
+			href: '/#about'
+		},
+		{
+			name: 'Experience',
+			href: '/#experience'
+		}
+	];
 </script>
 
 <header>
@@ -66,9 +86,9 @@
 				>
 				<div class="hidden sm:flex sm:flex-1 sm:items-center sm:justify-between sm:ml-6">
 					<div>
-						<HeaderLink href="/">Home</HeaderLink>
-						<HeaderLink href="/about">About</HeaderLink>
-						<HeaderLink href="/experience">Experience</HeaderLink>
+						{#each links as link}
+							<HeaderLink href={link.href}>{link.name}</HeaderLink>
+						{/each}
 					</div>
 					<DarkModeToggle />
 				</div>
@@ -77,9 +97,9 @@
 			{#if isMenuOpen}
 				<div class="sm:hidden" id="mobile-menu">
 					<div class="flex flex-col space-y-1 px-2 pb-6 pt-2">
-						<HeaderLink href="/">Home</HeaderLink>
-						<HeaderLink href="/about">About</HeaderLink>
-						<HeaderLink href="/experience">Experience</HeaderLink>
+						{#each links as link}
+							<HeaderLink href={link.href}>{link.name}</HeaderLink>
+						{/each}
 						<DarkModeToggle />
 					</div>
 				</div>

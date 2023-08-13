@@ -19,8 +19,8 @@
 	<meta property="twitter:description" content={description} />
 </svelte:head>
 
-<div class="p-12 sm:p-16 md:p-28 lg:p-32">
-	<div class="grid gap-3 sm:gap-9 place-items-center md:grid-cols-2">
+<div>
+	<div id="home" class="md:min-h-[85vh] grid gap-3 sm:gap-9 place-items-center md:grid-cols-2">
 		<img
 			class="h-48 w-48 sm:h-56 sm:w-56 lg:h-80 lg:w-80 shadow-2xl lg:ml-12 rounded-full md:order-last"
 			alt="Profile"
@@ -48,7 +48,7 @@
 		</div>
 	</div>
 	<div class="my-72">
-		<div class="grid gap-3 sm:gap-9 place-items-center">
+		<div id="about" class="grid gap-3 sm:gap-9 place-items-center">
 			<h1
 				class="text-2xl sm:text-3xl lg:text-4xl text-center leading-normal font-semibold text-zinc-900 dark:text-zinc-100"
 			>
@@ -84,7 +84,7 @@
 	</div>
 	<div class="my-72">
 		<h1
-			class="text-2xl sm:text-3xl lg:text-4xl text-center leading-normal font-semibold text-zinc-900 dark:text-zinc-100"
+			id="experience" class="text-2xl sm:text-3xl lg:text-4xl text-center leading-normal font-semibold text-zinc-900 dark:text-zinc-100"
 		>
 			Experience
 		</h1>
@@ -179,7 +179,7 @@
 	</div>
 	<div class="my-72">
 		<h1
-			class="text-2xl sm:text-3xl lg:text-4xl text-center leading-normal font-semibold text-zinc-900 dark:text-zinc-100"
+			id="stack" class="text-2xl sm:text-3xl lg:text-4xl text-center leading-normal font-semibold text-zinc-900 dark:text-zinc-100"
 		>
 			Tech stack
 		</h1>
@@ -191,7 +191,7 @@
 	</div>
 	<div class="my-72">
 		<h1
-			class="text-2xl sm:text-3xl lg:text-4xl text-center leading-normal font-semibold text-zinc-900 dark:text-zinc-100"
+			id="education" class="text-2xl sm:text-3xl lg:text-4xl text-center leading-normal font-semibold text-zinc-900 dark:text-zinc-100"
 		>
 			Education
 		</h1>
