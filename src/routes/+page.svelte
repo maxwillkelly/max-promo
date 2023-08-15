@@ -49,8 +49,8 @@
 			</Button>
 		</div>
 	</div>
-	<div class="my-72 md:min-h-[85vh]">
-		<div id="about" class="grid place-items-center gap-3 sm:gap-9">
+	<div id="about" class="py-72 md:min-h-[85vh]">
+		<div class="grid place-items-center gap-3 sm:gap-9">
 			<h1
 				class="text-center text-2xl font-semibold leading-normal text-zinc-900 dark:text-zinc-100 sm:text-3xl lg:text-4xl"
 			>
@@ -84,9 +84,8 @@
 			</Button>
 		</div>
 	</div>
-	<div class="my-72 md:min-h-[85vh]">
+	<div id="experience" class="py-72 md:min-h-[85vh]">
 		<h1
-			id="experience"
 			class="text-center text-2xl font-semibold leading-normal text-zinc-900 dark:text-zinc-100 sm:text-3xl lg:text-4xl"
 		>
 			Experience
@@ -180,9 +179,8 @@
 			</li>
 		</ol>
 	</div>
-	<div class="my-72 md:min-h-[85vh]">
+	<div id="stack" class="py-72 md:min-h-[85vh]">
 		<h1
-			id="stack"
 			class="text-center text-2xl font-semibold leading-normal text-zinc-900 dark:text-zinc-100 sm:text-3xl lg:text-4xl"
 		>
 			Tech stack
@@ -193,9 +191,8 @@
 			Here's what I know
 		</p>
 	</div>
-	<div class="my-72 md:min-h-[85vh]">
+	<div id="education" class="py-72 md:min-h-[85vh]">
 		<h1
-			id="education"
 			class="text-center text-2xl font-semibold leading-normal text-zinc-900 dark:text-zinc-100 sm:text-3xl lg:text-4xl"
 		>
 			Education
@@ -206,7 +203,7 @@
 			Here's where I went to school
 		</p>
 	</div>
-	<div class="my-72 md:min-h-[85vh]">
+	<div id="contact" class="py-72 md:min-h-[85vh]">
 		<h1
 			class="text-center text-2xl font-semibold leading-normal text-zinc-900 dark:text-zinc-100 sm:text-3xl lg:text-4xl"
 		>
