@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { fade } from 'svelte/transition';
+	import { inview } from 'svelte-inview';
 	import Icon from '@iconify/svelte';
 
 	import { scrollToCentre } from '$lib/utils/scroll';
@@ -9,6 +11,8 @@
 	const title = 'Max Kelly - Software Engineer';
 	const description =
 		'Portfolio website for Software Engineer Max Kelly. A showcase of my experience and skills.';
+
+	$: isInView = false;
 </script>
 
 <svelte:head>
@@ -50,40 +54,50 @@
 			</Button>
 		</div>
 	</div>
-	<div id="about" class="py-72 md:min-h-[85vh]">
-		<div class="grid place-items-center gap-3 sm:gap-9">
-			<h1
-				class="text-center text-2xl font-semibold leading-normal text-zinc-900 dark:text-zinc-100 sm:text-3xl lg:text-4xl"
-			>
-				About
-			</h1>
-			<p
-				class="text-md mt-2 text-center font-medium leading-normal text-zinc-600 dark:text-zinc-300 sm:text-lg"
-			>
-				I am a Software Engineer with a passion for building high quality, scalable and maintainable
-				software. I have a keen interest in learning new technologies and applying them to solve
-				real world problems.
-			</p>
-		</div>
-		<div class="mt-16 grid grid-cols-3 place-items-center gap-3 text-center sm:gap-9">
-			<div class="grid h-28 w-40 place-items-center">
-				<h2 class="text-5xl leading-normal text-zinc-900 dark:text-zinc-100">3+</h2>
-				<p class="text-sm leading-normal text-zinc-600 dark:text-zinc-300">Years experience</p>
+	<div
+		class="wrapper"
+		use:inview={{ unobserveOnEnter: true, rootMargin: '-20%' }}
+		on:inview_change={({ detail: { inView } }) => {
+			isInView = inView;
+		}}
+	>
+		{#if isInView}
+			<div in:fade id="about" class="py-72 md:min-h-[85vh]">
+				<div class="grid place-items-center gap-3 sm:gap-9">
+					<h1
+						class="text-center text-2xl font-semibold leading-normal text-zinc-900 dark:text-zinc-100 sm:text-3xl lg:text-4xl"
+					>
+						About
+					</h1>
+					<p
+						class="text-md mt-2 text-center font-medium leading-normal text-zinc-600 dark:text-zinc-300 sm:text-lg"
+					>
+						I am a Software Engineer with a passion for building high quality, scalable and
+						maintainable software. I have a keen interest in learning new technologies and applying
+						them to solve real world problems.
+					</p>
+				</div>
+				<div class="mt-16 grid grid-cols-3 place-items-center gap-3 text-center sm:gap-9">
+					<div class="grid h-28 w-40 place-items-center">
+						<h2 class="text-5xl leading-normal text-zinc-900 dark:text-zinc-100">3+</h2>
+						<p class="text-sm leading-normal text-zinc-600 dark:text-zinc-300">Years experience</p>
+					</div>
+					<div class="grid h-28 w-40 place-items-center">
+						<h2 class="text-5xl leading-normal text-zinc-900 dark:text-zinc-100">12+</h2>
+						<p class="text-sm leading-normal text-zinc-600 dark:text-zinc-300">Languages</p>
+					</div>
+					<div class="grid h-28 w-40 place-items-center">
+						<h2 class="text-5xl leading-normal text-zinc-900 dark:text-zinc-100">20+</h2>
+						<p class="text-sm leading-normal text-zinc-600 dark:text-zinc-300">Projects</p>
+					</div>
+				</div>
+				<div class="mt-8 flex flex-1 justify-center">
+					<Button title="Download CV">
+						<Icon icon="ion:cloud-download" height={24} width={24} />
+					</Button>
+				</div>
 			</div>
-			<div class="grid h-28 w-40 place-items-center">
-				<h2 class="text-5xl leading-normal text-zinc-900 dark:text-zinc-100">12+</h2>
-				<p class="text-sm leading-normal text-zinc-600 dark:text-zinc-300">Languages</p>
-			</div>
-			<div class="grid h-28 w-40 place-items-center">
-				<h2 class="text-5xl leading-normal text-zinc-900 dark:text-zinc-100">20+</h2>
-				<p class="text-sm leading-normal text-zinc-600 dark:text-zinc-300">Projects</p>
-			</div>
-		</div>
-		<div class="mt-8 flex flex-1 justify-center">
-			<Button title="Download CV">
-				<Icon icon="ion:cloud-download" height={24} width={24} />
-			</Button>
-		</div>
+		{/if}
 	</div>
 	<div id="experience" class="py-72 md:min-h-[85vh]">
 		<h1
@@ -97,7 +111,7 @@
 			Here are some of the companies I have worked for
 		</p>
 		<ol class="relative mt-16 border-l-4 border-rose-600 dark:border-rose-600">
-			<li class="mb-10 ml-4">
+			<!-- <li class="mb-10 ml-4">
 				<div
 					class="absolute -left-3.5 h-6 w-6 rounded-full border bg-rose-600 dark:border-rose-900 dark:bg-rose-600"
 				/>
@@ -126,7 +140,7 @@
 					nobis nemo magni enim veritatis, delectus quam? Dolorem amet obcaecati nulla porro labore.
 					Rem eos quae provident?
 				</p>
-			</li>
+			</li> -->
 			<li class="mb-10 ml-4">
 				<div
 					class="absolute -left-3.5 h-6 w-6 rounded-full border bg-rose-600 dark:border-rose-900 dark:bg-rose-600"
