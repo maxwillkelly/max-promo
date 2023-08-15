@@ -1,15 +1,22 @@
 <script lang="ts">
-	import { page } from '$app/stores';
+	import type { MouseEventHandler } from 'svelte/elements';
 
 	export let href: string;
 
-    $: active = $page.url.pathname.endsWith(href);
+	const scrollIntoView: MouseEventHandler<HTMLButtonElement> = (event) => {
+		const el = document.querySelector(href.slice(1));
 
-	$: className = active
-		? 'bg-rose-600 hover:bg-rose-800 text-white rounded-md px-3 py-2 text-sm font-medium'
-		: 'text-zinc-900 dark:text-zinc-300 hover:bg-zinc-800 hover:text-white rounded-md px-3 py-2 text-sm font-medium';
+		if (!el) return;
+
+		el.scrollIntoView({
+			behavior: 'smooth'
+		});
+	};
 </script>
 
-<a {href} class={className} aria-current={active}>
+<button
+	class="rounded-md px-3 py-2 text-sm font-medium text-zinc-900 hover:bg-zinc-800 hover:text-white dark:text-zinc-300"
+	on:click={scrollIntoView}
+>
 	<slot />
-</a>
+</button>

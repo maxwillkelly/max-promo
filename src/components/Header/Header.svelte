@@ -85,7 +85,7 @@
 					/></a
 				>
 				<div class="hidden sm:flex sm:flex-1 sm:items-center sm:justify-between sm:ml-6">
-					<div>
+					<div class="flex gap-2">
 						{#each links as link}
 							<HeaderLink href={link.href}>{link.name}</HeaderLink>
 						{/each}
