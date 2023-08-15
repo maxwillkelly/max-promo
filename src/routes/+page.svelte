@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Icon from '@iconify/svelte';
 
+	import { scrollToCentre } from '$lib/utils/scroll';
 	import profileImage from '$lib/images/profile.jpg';
 
 	import Button from '../components/common/Button.svelte';
@@ -44,7 +45,7 @@
 			>
 				A passionate developer that thinks about the small details.
 			</p>
-			<Button title="Message me">
+			<Button title="Message me" on:click={() => scrollToCentre('/#contact')}>
 				<Icon icon="ion:send" height={24} width={24} />
 			</Button>
 		</div>
