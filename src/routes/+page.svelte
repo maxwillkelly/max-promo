@@ -27,7 +27,7 @@
 </svelte:head>
 
 <div>
-	<div id="home" class="grid place-items-center gap-3 sm:gap-9 md:min-h-[85vh] md:grid-cols-2">
+	<div id="home" class="grid place-items-center gap-3 sm:gap-9 py-16 sm:py-48 md:py-0 md:min-h-[85vh] md:grid-cols-2">
 		<img
 			class="h-48 w-48 rounded-full shadow-2xl sm:h-56 sm:w-56 md:order-last lg:ml-12 lg:h-80 lg:w-80"
 			alt="Profile"
@@ -35,10 +35,15 @@
 		/>
 		<div class="flex flex-col items-center justify-center">
 			<h1
-				class="text-center text-3xl font-semibold leading-normal text-zinc-900 dark:text-zinc-100 sm:text-4xl lg:text-5xl lg:leading-relaxed"
+				class="bg-gradient-to-r from-black to-gray-600 dark:from-white dark:to-gray-400 bg-clip-text text-center text-3xl font-bold tracking-tighter text-transparent sm:text-5xl xl:text-6xl/none"
 			>
 				Hello, I am <br />Max Kelly
 			</h1>
+			<!-- <h1
+				class="text-center text-3xl font-semibold leading-normal text-zinc-900 dark:text-zinc-100 sm:text-4xl lg:text-5xl lg:leading-relaxed"
+			>
+				Hello, I am <br />Max Kelly
+			</h1> -->
 			<h2
 				class="text-md mt-2 text-center font-semibold leading-normal text-zinc-600 dark:text-zinc-300 sm:text-lg lg:text-xl lg:leading-relaxed"
 			>
